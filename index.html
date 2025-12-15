@@ -1,108 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmental Protection - Green Network</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
-        :root{
-            --primary:#2e7d32;
-            --secondary:#4caf50;
-            --accent:#8bc34a;
-            --light:#e8f5e9;
-            --dark:#1b5e20;
-            --text:#333;
-            --white:#fff;
-        }
-        body{background-color:var(--light);color:var(--text);line-height:1.6;}
-        header{
-            background:linear-gradient(to right,var(--primary),var(--secondary));
-            color:var(--white);padding:0.8rem 0;position:sticky;top:0;z-index:100;
-        }
-        .container{width:90%;max-width:1000px;margin:0 auto;}
-        .nav-container{display:flex;justify-content:space-between;align-items:center;}
-        .logo{display:flex;align-items:center;gap:8px;font-size:1.4rem;font-weight:700;}
-        nav ul{display:flex;list-style:none;font-size:0.95rem;}
-        nav ul li{margin-left:1.2rem;}
-        nav ul li a{color:var(--white);text-decoration:none;}
-        .mobile-menu{display:none;color:#fff;font-size:1.4rem;cursor:pointer;}
-
-        .hero{
-            background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.4)),
-            url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1600&q=80');
-            background-size:cover;background-position:center;
-            height:45vh;display:flex;align-items:center;text-align:center;color:var(--white);
-        }
-        .hero-content{max-width:700px;margin:0 auto;}
-        .hero h1{font-size:2.2rem;margin-bottom:0.7rem;}
-        .hero p{font-size:1rem;}
-
-        section{padding:2.8rem 0;}
-        .section-title{text-align:center;margin-bottom:1.5rem;}
-        .section-title h2{font-size:1.7rem;color:var(--primary);margin-bottom:0.4rem;}
-        .section-title p{font-size:0.95rem;color:#555;}
-
-        .glossary-box{
-            background-color:var(--white);border-radius:8px;
-            padding:1.5rem 1.6rem;box-shadow:0 4px 12px rgba(0,0,0,0.04);
-        }
-        .glossary-box h3{font-size:1.2rem;color:var(--dark);margin-bottom:0.6rem;}
-        .glossary-box p{font-size:0.95rem;margin-bottom:0.5rem;}
-        .tag{
-            display:inline-block;background-color:var(--light);
-            color:var(--dark);padding:0.1rem 0.5rem;border-radius:3px;
-            font-size:0.75rem;font-weight:600;margin-bottom:0.4rem;
-        }
-        ul.simple-list{margin-left:1.1rem;margin-top:0.4rem;font-size:0.95rem;}
-        ul.simple-list li{margin-bottom:0.3rem;}
-
-        .cta{
-            background:linear-gradient(to right,var(--primary),var(--secondary));
-            color:var(--white);text-align:center;padding:2.5rem 0;
-        }
-        .cta h2{font-size:1.6rem;margin-bottom:0.6rem;}
-        .cta p{font-size:0.95rem;margin-bottom:1rem;}
-
-        footer{
-            background-color:var(--dark);color:var(--white);
-            padding:1.8rem 0 1rem;font-size:0.85rem;
-        }
-        .footer-content{display:flex;flex-wrap:wrap;gap:1.5rem;}
-        .footer-column{flex:1 1 180px;}
-        .footer-column h3{font-size:0.95rem;margin-bottom:0.5rem;}
-        .footer-column p{margin-bottom:0.4rem;}
-        .footer-links{list-style:none;}
-        .footer-links li{margin-bottom:0.3rem;}
-        .footer-links a{color:var(--light);text-decoration:none;font-size:0.85rem;}
-        .social-links{display:flex;gap:0.5rem;margin-top:0.3rem;}
-        .social-links a{
-            width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;
-            border-radius:50%;background-color:rgba(255,255,255,0.1);color:#fff;font-size:0.8rem;
-        }
-        .copyright{text-align:center;padding-top:0.8rem;border-top:1px solid rgba(255,255,255,0.1);}
-
-        @media(max-width:768px){
-            .hero{height:40vh;}
-            .hero h1{font-size:1.8rem;}
-            nav ul{
-                display:none;position:absolute;top:100%;left:0;width:100%;
-                background-color:var(--primary);flex-direction:column;text-align:center;padding:0.6rem 0;
-            }
-            nav ul.active{display:flex;}
-            nav ul li{margin:0.3rem 0;}
-            .mobile-menu{display:block;}
-            .footer-content{flex-direction:column;}
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>环境科学学报</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: 'Microsoft YaHei', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #0066cc;
+      text-align: center;
+      font-size: 28px;
+      margin: 30px 0;
+    }
+    .info {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      color: #0066cc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .articles {
+      margin-top: 20px;
+    }
+    .article {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .article-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-<header>
-    <div class="container nav-container">
-        <div class="logo">
-            <i class="fas fa-seedling"></i>
-            <span>Green Network</span>
-        </div>
-        <nav>
-            <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+  <h1>环境科学学报</h1>
+  <div class="info">
+    <p>中国科学院生态环境研究中心主办 CSSCI来源期刊</p>
+    <div class="nav">
+      <a href="#">首页</a>
+      <a href="#">关于期刊</a>
+      <a href="#">编委会</a>
+      <a href="#">投稿须知</a>
+      <a href="#">当前刊</a>
+      <a href="#">过刊浏览</a>
+    </div>
+    <div class="articles">
+      <div class="article">
+        <div class="article-title">大气颗粒物污染控制新技术研究进展</div>
+        <div class="article-meta">2025年第42卷第12期 | 下载1472次</div>
+      </div>
+      <div class="article">
+        <div class="article-title">城市黑臭水体治理技术综述</div>
+        <div class="article-meta">2025年第42卷第11期 | 下载1256次</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
